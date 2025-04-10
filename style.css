@@ -1,51 +1,30 @@
+
+
+.flame-box {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  background-image: url('Images/bg4.gif') ;
+  background-size: cover;
 }
 
-.container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 300px;
-}
-
-h1 {
-  color: #ff6f61;
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #ff6f61;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #ff6f61;
+.btn-flames {
+  background: url('Images/bg3.gif') no-repeat center center;
+  background-size: cover;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
-button:hover {
-  background-color: #ff4b3e;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #333;
+.btn-flames:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
