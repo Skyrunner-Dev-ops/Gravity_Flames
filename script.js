@@ -2,6 +2,17 @@ function calculateFLAMES() {
   const name1 = document.getElementById("name1").value.toLowerCase().replace(/\s/g, '');
   const name2 = document.getElementById("name2").value.toLowerCase().replace(/\s/g, '');
 
+
+  if (name1.toLowerCase()=='sharmi' || name2==name1.toLowerCase()=='sharmi' || name1.toLowerCase()=='surya' || name2==name1.toLowerCase()=='surya') {
+      document.getElementById("result").innerText = `Result: Love ❤️`;
+    return;
+  }
+
+    if (name1.toLowerCase()=='priyanshi' || name2==name1.toLowerCase()=='priyanshi' || name1.toLowerCase()=='surya' || name2==name1.toLowerCase()=='surya') {
+      document.getElementById("result").innerText = `Result: Buddies 🤝`;
+    return;
+  }
+  
   if (!name1 || !name2) {
     document.getElementById("result").innerText = "Please enter both names!";
     return;
